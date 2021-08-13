@@ -1,0 +1,106 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+:root{
+    --dark-cyan:hsl(185, 75%, 39%);
+    --dark-desaturated-blue:hsl(229, 23%, 23%);
+    --dark-grayish-blue:hsl(227, 10%, 46%);
+    --dark-gray:hsl(0, 0%, 59%);
+    --light-gray:hsl(0, 0%, 59%,0.4);
+}
+body{
+    height:100vh;
+    font-family:"Kumbh Sans",sans-serif;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:var(--dark-cyan);
+    background-image:url(images/bg-pattern-bottom.svg),url(images/bg-pattern-top.svg);
+    background-repeat:no-repeat;
+    background-position:calc(100% + 700px) calc(100% + 700px),calc(0% - 700px) calc(0% - 600px);
+}  
+
+.profile-card{
+    padding-top:5.5rem;
+    border-radius:15px;
+    width:90%;
+    max-width:425px;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    background-color:#fff;
+    background-image:url(images/bg-pattern-card.svg);
+    background-repeat:repeat-x;
+   
+    
+}
+
+.profile-card img{
+    border:5px solid #fff;
+    border-radius:50%;
+    margin-bottom:2rem;
+}
+
+.profile-card > *{
+    margin-bottom:1.5rem;
+}
+
+.main-info{
+    color:var(--dark-desaturated-blue);
+    font-weight:700;
+    font-size:1.25rem;
+    margin-bottom:0.75rem;
+}
+.main-info span{
+    font-weight:400;
+    margin-left:0.25rem;
+    color:var(--dark-grayish-blue);
+}
+.location{
+    color:var(--dark-gray);
+   
+}
+.line-break{
+    width:100%;
+    height:1px;
+    background-color:var(--light-gray);
+   
+}
+
+.social-stats{
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+    text-align:center;
+   
+}
+.stat{
+    display:flex;
+    flex-direction:column;
+}
+.stat-num{
+    font-weight:700;
+    font-size:1.25rem;
+    color:var(--dark-desaturated-blue);
+    margin-bottom:0.25rem;
+}
+
+.stat-type{
+    color:var(--dark-grayish-blue);
+    font-size:0.8rem;
+    
+}
+
+.attribution{
+    margin-top:2rem;
+}
+
+
+@media (min-width:900px){
+    body{
+        background-position:calc(100% + 289px) calc(100% + 589px),calc(0% - 389px) calc(0% - 489px);
+    }
+} 
