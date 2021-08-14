@@ -34,6 +34,7 @@ body{
     background-color:#fff;
     background-image:url(images/bg-pattern-card.svg);
     background-repeat:repeat-x;
+    animation:fade-in 5s linear;
    
     
 }
@@ -104,3 +105,12 @@ body{
         background-position:calc(100% + 289px) calc(100% + 589px),calc(0% - 389px) calc(0% - 489px);
     }
 } 
+
+@keyframes fade-in{
+    from{
+        opacity:0%
+    }
+    to{
+        opacity:100%
+    }
+}
